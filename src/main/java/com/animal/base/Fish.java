@@ -16,5 +16,19 @@ public class Fish extends Animal implements WaterActivity
         System.out.println("[Fish] Default Properties :: "+toString());
     }
 
+    private boolean isLarge;
+    private boolean isColourFull;
+    private boolean makesJokes;
+    private boolean eatOtherFishes;
+
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "isLarge=" + isLarge +
+                ", isColourFull=" + isColourFull +
+                ", makesJokes=" + makesJokes +
+                ", eatOtherFishes=" + eatOtherFishes +
+                '}';
+    }
 
 }
