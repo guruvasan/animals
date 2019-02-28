@@ -40,3 +40,12 @@ No Of Animals Can Walk :: 10 and the Animals are : [Bird, Duck, Chicken, Rooster
 No Of Animals Can Sing :: 5 and the Animals are : [Bird, Duck, Chicken, Rooster, Parrot]
 No Of Animals Can Swim :: 7 and the Animals are : [Duck, Fish, Shark, ClownFish, Dolphin, Frog, Dog]
 
+
+BONUS:
+
+OUTPUT:
+Received Display Language :: Tamil
+[Rooster] kokra kok kooo
+Received Display Language :: Hindi
+[Rooster] Cock-a-doodle-doo
+

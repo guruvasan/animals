@@ -8,6 +8,8 @@ import com.animal.birds.Parrot;
 import com.animal.birds.Rooster;
 import org.junit.Test;
 
+import java.util.Locale;
+
 import static org.mockito.Mockito.*;
 
 public class BirdTest
@@ -83,5 +85,19 @@ public class BirdTest
         parrot.setLivesNearBy(dog);
         parrot.sing();
         verify(dog,times(1)).sound();
+    }
+
+
+    @Test
+    public void roosterSaysCock_a_doodle_do_in_various_language_Test() {
+        Rooster rooster = mock(Rooster.class);
+
+        Locale locale = Locale.forLanguageTag("ta-IN"); // Tamil is my second language
+        doCallRealMethod().when(rooster).sing(locale);
+        rooster.sing(locale);
+
+        Locale locale1 = Locale.forLanguageTag("hi-IN"); // Hindi was given Since not in the list Returned the default
+        doCallRealMethod().when(rooster).sing(locale1);
+        rooster.sing(locale1);
     }
 }

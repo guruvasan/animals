@@ -1,9 +1,11 @@
 package com.animal.birds;
 
 import com.animal.base.Bird;
+import com.util.AnimalUtil;
 
-public class Rooster extends Bird
-{
+import java.util.Locale;
+
+public class Rooster extends Bird {
 
     public Rooster() {
         super();
@@ -17,4 +19,7 @@ public class Rooster extends Bird
         System.out.println("[Rooster] Cock-a-doodle-doo");
     }
 
+    public void sing(Locale locale) {
+        System.out.println("[Rooster] "+ AnimalUtil.roosterSound(locale.getDisplayLanguage()));
+    }
 }
