@@ -17,3 +17,7 @@ Answer For A.3
 
 Answer For A.4
 Any Class should implment Activty which has the sound can be set in the Parrot Class. Corresponding sound will be played by parrot.
+
+
+Answer For B.1
+Fish Model Created by extending Animal and implementing WaterActivity
