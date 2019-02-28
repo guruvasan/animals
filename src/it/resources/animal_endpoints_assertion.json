@@ -1,0 +1,96 @@
+{
+  "scenarioName": "Get the Animals",
+  "steps": [
+    {
+      "name": "get_animals_list",
+      "url": "/animals",
+      "operation": "GET",
+      "request": {
+      },
+      "assertions": {
+        "status": 200,
+        "body": {
+
+      "response": [
+        "Bird",
+        "Butterfly",
+        "Cat",
+        "CatterPillar",
+        "Chicken",
+        "ClownFish",
+        "Dog",
+        "Dolphin",
+        "Duck",
+        "Fish",
+        "Frog",
+        "Parrot",
+        "Rooster",
+        "Shark"
+      ]
+
+
+        }
+      }
+    } ,
+    {
+      "name": "get_animals_count",
+      "url": "/animals/count",
+      "operation": "GET",
+      "request": {
+      },
+      "assertions": {
+        "status": 200,
+        "body": {
+          "response": [
+            {
+              "noOfFlyingAnimals": 4,
+              "animals": [
+                "Bird",
+                "Butterfly",
+                "Parrot",
+                "Rooster"
+              ]
+            },
+            {
+              "animals": [
+                "Bird",
+                "Butterfly",
+                "Cat",
+                "CatterPillar",
+                "Chicken",
+                "Dog",
+                "Duck",
+                "Frog",
+                "Parrot",
+                "Rooster"
+              ],
+              "noOfWalkingAnimals": 10
+            },
+            {
+              "noOfSwimmingAnimals": 7,
+              "animals": [
+                "ClownFish",
+                "Dog",
+                "Dolphin",
+                "Duck",
+                "Fish",
+                "Frog",
+                "Shark"
+              ]
+            },
+            {
+              "noOfSingingAnimals": 5,
+              "animals": [
+                "Bird",
+                "Chicken",
+                "Duck",
+                "Parrot",
+                "Rooster"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

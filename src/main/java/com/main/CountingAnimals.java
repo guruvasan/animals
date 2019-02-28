@@ -79,6 +79,10 @@ public class CountingAnimals
         System.out.println("No Of Animals Can Sing :: "+animalsCanSing.size()+" and the Animals are : "+animalsCanSing);
         System.out.println("No Of Animals Can Swim :: "+animalsCanSwim.size()+" and the Animals are : "+animalsCanSwim);
 
+        animalsCanFly.sort(null);
+        animalsCanWalk.sort(null);
+        animalsCanSwim.sort(null);
+        animalsCanSing.sort(null);
 
         Map<String,Object> flyingAnimalDetails = new HashMap<>();
         Map<String,Object> walkingAnimalDetails = new HashMap<>();

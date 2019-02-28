@@ -52,9 +52,12 @@ public class AnimalController
     }
 
     @RequestMapping(method = RequestMethod.GET,value = "/animals/count")
-    public List<Map<String,Object>> getCount() {
+    public Map<String,List<Map<String,Object>>> getCount() {
         Animal[] animals = createArrayOfAnimals();
-        return CountingAnimals.getAnimalDetails(animals);
+        Map<String,List<Map<String,Object>> > response = new HashMap<>();
+        List<Map<String,Object>> animalDetails = CountingAnimals.getAnimalDetails(animals);
+        response.put("response",animalDetails);
+        return response;
     }
 
     private Animal[] createArrayOfAnimals() {
