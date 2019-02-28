@@ -3,6 +3,8 @@ package com.animal.base;
 import com.animal.birds.Chicken;
 import com.animal.birds.Duck;
 import static org.junit.Assert.*;
+
+import com.animal.birds.Rooster;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -46,5 +48,18 @@ public class BirdTest
 
         bird = mock(Chicken.class);
         singTest();
+    }
+
+    @Test
+    public void roosterSaysCock_a_doodle_do_Test() {
+        Chicken chicken = new Chicken();
+        Rooster rooster = new Rooster();
+        chicken.setRooster(rooster);
+        chicken.sing();
+
+        assertNotNull(chicken.getRooster());
+        bird = mock(Rooster.class);
+        singTest();
+
     }
 }
