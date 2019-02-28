@@ -4,6 +4,7 @@ import com.animal.birds.Chicken;
 import com.animal.birds.Duck;
 import static org.junit.Assert.*;
 
+import com.animal.birds.Parrot;
 import com.animal.birds.Rooster;
 import org.junit.Test;
 
@@ -61,5 +62,26 @@ public class BirdTest
         bird = mock(Rooster.class);
         singTest();
 
+    }
+
+    @Test
+    public void parrotSaysCock_a_doodle_do_And_Woof_Woof_Test() {
+        Parrot parrot = new Parrot();
+        Rooster rooster = new Rooster();
+        parrot.setLivesNearBy(rooster);
+        parrot.sing();
+
+        bird = mock(Rooster.class);
+        singTest();
+
+        Dog  dog = new Dog();
+        parrot.setLivesNearBy(dog);
+        parrot.sing();
+
+        dog = mock(Dog.class);
+        doCallRealMethod().when(dog).sound();
+        parrot.setLivesNearBy(dog);
+        parrot.sing();
+        verify(dog,times(1)).sound();
     }
 }

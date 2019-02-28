@@ -13,3 +13,7 @@ Answer For A.3
 2. Rooster is a Adult Male in the Chicken Family
 3. Delegation is used to relate Rooster to chicken with out using inheritance.
 
+
+
+Answer For A.4
+Any Class should implment Activty which has the sound can be set in the Parrot Class. Corresponding sound will be played by parrot.
