@@ -27,3 +27,16 @@ Answer For B.3
 1) Dolphin Model Created by extending Animal and implementing WaterActivity
 2) Fish CLass was not inherited
 3) No Duplicate, Since the swimming is a seperate activity
+
+
+Answer For E
+
+After Executing the CountingAnimals main method
+
+OUTPUT:
+Total Number of Animals :: 14
+No Of Animals Can Fly :: 4 and the Animals are : [Bird, Rooster, Parrot, Butterfly]
+No Of Animals Can Walk :: 10 and the Animals are : [Bird, Duck, Chicken, Rooster, Parrot, Frog, Dog, CatterPillar, Butterfly, Cat]
+No Of Animals Can Sing :: 5 and the Animals are : [Bird, Duck, Chicken, Rooster, Parrot]
+No Of Animals Can Swim :: 7 and the Animals are : [Duck, Fish, Shark, ClownFish, Dolphin, Frog, Dog]
+
