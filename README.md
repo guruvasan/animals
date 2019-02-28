@@ -21,3 +21,9 @@ Any Class should implment Activty which has the sound can be set in the Parrot C
 
 Answer For B.1
 Fish Model Created by extending Animal and implementing WaterActivity
+
+
+Answer For B.3
+1) Dolphin Model Created by extending Animal and implementing WaterActivity
+2) Fish CLass was not inherited
+3) No Duplicate, Since the swimming is a seperate activity
