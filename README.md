@@ -43,9 +43,138 @@ No Of Animals Can Swim :: 7 and the Animals are : [Duck, Fish, Shark, ClownFish,
 
 BONUS:
 
-OUTPUT:
+1) OUTPUT:
 Received Display Language :: Tamil
 [Rooster] kokra kok kooo
 Received Display Language :: Hindi
 [Rooster] Cock-a-doodle-doo
+
+
+
+2) RestFull Service
+
+When we start the AnimalSpringBootApplication Controller will be ready .
+
+Request : http://localhost:8080/animals
+
+Response :
+
+{
+    "response": [
+        "Bird",
+        "Butterfly",
+        "Cat",
+        "CatterPillar",
+        "Chicken",
+        "ClownFish",
+        "Dog",
+        "Dolphin",
+        "Duck",
+        "Fish",
+        "Frog",
+        "Parrot",
+        "Rooster",
+        "Shark"
+    ]
+}
+
+
+
+-------------------
+
+Request  : http://localhost:8080/animal/dog
+Response :
+
+{
+    "flyable": false,
+    "walkable": true,
+    "singable": false,
+    "swimmable": true,
+    "name": "Dog"
+}
+-------------------
+
+
+Request : http://localhost:8080/animal/shark
+Response:
+
+{
+    "flyable": false,
+    "walkable": false,
+    "singable": false,
+    "swimmable": true,
+    "name": "Shark",
+    "makesJokes": false,
+    "eatOtherFishes": true,
+    "large": true,
+    "colourFull": false
+}
+--------------------
+
+Request: http://localhost:8080/animal/8y78r3bsdsdvndfkvodivev
+Response:
+
+{
+    "flyable": false,
+    "walkable": false,
+    "singable": false,
+    "swimmable": false,
+    "name": "Animal"
+}
+
+---------------------
+
+Request : http://localhost:8080/animals/count
+
+Response :
+
+[
+    {
+        "noOfFlyingAnimals": 4,
+        "animals": [
+            "Bird",
+            "Rooster",
+            "Parrot",
+            "Butterfly"
+        ]
+    },
+    {
+        "animals": [
+            "Bird",
+            "Duck",
+            "Chicken",
+            "Rooster",
+            "Parrot",
+            "Frog",
+            "Dog",
+            "CatterPillar",
+            "Butterfly",
+            "Cat"
+        ],
+        "noOfWalkingAnimals": 10
+    },
+    {
+        "noOfSwimmingAnimals": 7,
+        "animals": [
+            "Duck",
+            "Fish",
+            "Shark",
+            "ClownFish",
+            "Dolphin",
+            "Frog",
+            "Dog"
+        ]
+    },
+    {
+        "noOfSingingAnimals": 5,
+        "animals": [
+            "Bird",
+            "Duck",
+            "Chicken",
+            "Rooster",
+            "Parrot"
+        ]
+    }
+]
+
 
